@@ -4,7 +4,7 @@
 // Make sure to bind KV namespace "GRASS_KV" in Worker settings
 // ============================================================
 
-const ADMIN_PASSWORD = "changeme123"; // ← CHANGE THIS
+const ADMIN_PASSWORD = "obsessedWithU"; // ← CHANGE THIS
 
 export default {
   async fetch(request, env) {
