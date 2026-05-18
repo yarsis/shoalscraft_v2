@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grass Block</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background:
+        radial-gradient(circle at center,
+        #1a1a1a 0%,
+        #080808 100%);
+    }
+
+    #grass {
+      width: 260px;
+      cursor: pointer;
+      user-select: none;
+
+      transform: rotate(-15deg);
+
+      transition:
+        transform 0.08s ease,
+        filter 0.2s ease;
+    }
+
+    #grass:hover {
+      filter: brightness(1.1);
+    }
+
+    .clicked {
+      transform:
+        rotate(-15deg)
+        scale(0.88);
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <img id="grass" src="grass.png" alt="Grass Block">
+
+  <audio id="sound" src="sound.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
